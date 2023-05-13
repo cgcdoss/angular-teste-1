@@ -1,0 +1,22 @@
+<button (click)="incrementar()">
+    {{ valor }}
+</button>
+
+<button (click)="valor = 0">
+    Resetar
+</button>
+
+<h1>
+    {{ valor }}
+</h1>
+
+
+<input type="text" [value]="nome" (input)="nome = $any($event.target).value">
+
+<h1>
+    {{ nome }}
+</h1>
+
+<button (click)="img = img === img2 ? img1 : img2">Alterar img</button>
+
+<img [src]="img">
